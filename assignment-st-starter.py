@@ -17,7 +17,7 @@ df = pd.read_csv('train.csv')
 # you need to set the x labels and y labels
 # a sample diagram is shown below
 
-st.write()
+st.write(df)
 fig,ax= plt.subplots(1,3,figsize=(15,5))
 df[df['Pclass']==1].Fare.plot.box(ax=ax[0])
 ax[0].set_xlabel('Pclass=1')
